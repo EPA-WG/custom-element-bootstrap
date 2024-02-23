@@ -1,0 +1,32 @@
+{
+  "name": "@epa-wg/custom-element-bootstrap",
+  "version": "0.0.16",
+  "description": "@epa-wg/custom-element project bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm i --no-save @web/dev-server && web-dev-server --node-resolve",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EPA-WG/custom-element-bootstrap.git"
+  },
+  "keywords": [
+    "WebComponent",
+    "Declarative",
+    "Custom",
+    "Element",
+    "XSLT",
+    "JS",
+    "JavaScript"
+  ],
+  "author": "Sasha Firsov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/EPA-WG/custom-element-bootstrap/issues"
+  },
+  "dependencies": {
+    "@epa-wg/custom-element": "0.0.16"
+  },
+  "homepage": "https://github.com/EPA-WG/custom-element-bootstrap#readme"
+}

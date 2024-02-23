@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="UTF-8">
+    <title>DCE bootstrap</title>
+    <script type="module" src="./node_modules/@epa-wg/custom-element/custom-element.js"></script>
+
+</head>
+<body>
+<h1>Declarative Custom Element project bootstrap</h1>
+<p>The reference project for HTML based web application</p>
+<custom-element tag="dce-param-demo" hidden>
+<xsl:param name="p1" >default_P1</xsl:param>
+<xsl:param name="p2" select="'always_p2'"  ></xsl:param>
+<xsl:param name="p3" select="//p3 ?? 'def_P3' "  ></xsl:param>
+p1:{$p1} <br/> p2: {$p2} <br/> p3: {$p3}
+</custom-element>
+
+<dce-param-demo id="dce1"></dce-param-demo>
+<section>
+    <dce-param-demo id="dce2" p1="123" p2="override ignored as select is defined"></dce-param-demo> <br/>
+    <div><input id="i1" value="p1" />  <button onclick="dce2.setAttribute('p1',i1.value)"> set p1</button> </div>
+    <div><input id="i2" value="p2" />  <button onclick="dce2.setAttribute('p2',i2.value)"> set p2</button> </div>
+    <div><input id="i3" value="p3" />  <button onclick="dce2.setAttribute('p3',i3.value)"> set p3</button> </div>
+</section>
+<dce-param-demo id="dce3" p1="123" p3="qwe"></dce-param-demo> |
+</body>
+</html>
