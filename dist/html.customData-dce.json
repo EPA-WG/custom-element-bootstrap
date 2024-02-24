@@ -1,0 +1,38 @@
+{
+    "version": 1.1,
+    "tags": [
+      {
+        "name": "dce-param-demo",
+        "description": "DCE example.  `<dce-param-demo p1='param 1'></dce-param-demo>`.",
+        "attributes": [
+          {
+            "name": "p1",
+            "description": "Attribute One. ",
+            "type": "string"
+          },
+          {
+            "name": "p2",
+            "description": "Attribute 2",
+            "type": "string"
+          },
+          {
+            "name": "p3",
+            "description": "Attribute 3",
+            "type": "string",
+            "references": [
+              {
+                "name": "example",
+                "url": "https://unpkg.com/@epa-wg/custom-element/demo/parameters.html"
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "name": "custom-element-bootstrap",
+            "url": "https://github.com/EPA-WG/custom-element-bootstrap"
+          }
+        ]
+      }
+    ]
+  }
